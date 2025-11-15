@@ -13,5 +13,5 @@ export const restaurantLocation: RestaurantLocation = {
 
 export const ubicacionBanner: SectionBanner = {
   title: 'Ubicación',
-  heroUrl: '/images/hero-blue.svg',
+  heroUrl: '/images/map.webp',
 };

@@ -160,5 +160,5 @@ export const menuCategories: Category[] = [
 
 export const cartaBanner: SectionBanner = {
   title: 'Carta',
-  heroUrl: '/images/foti.png',
+  heroUrl: '/images/foti.webp',
 };

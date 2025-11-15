@@ -10,6 +10,6 @@ export const restaurantContact: RestaurantContact = {
     facebook: 'https://facebook.com/sanguchoncampesino',
     tiktok: 'https://www.tiktok.com/@sanguchoncampesino',
   },
-  heroUrl: '/images/foti.png',
+  heroUrl: '/images/foti.webp',
   logoUrl: '/images/logochi.png',
 };
