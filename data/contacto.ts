@@ -11,5 +11,5 @@ export const restaurantContact: RestaurantContact = {
     tiktok: 'https://www.tiktok.com/@sanguchoncampesino',
   },
   heroUrl: '/images/foti.webp',
-  logoUrl: '/images/logochi.png',
+  logoUrl: '/images/logochi.webp',
 };
