@@ -37,7 +37,14 @@ export default function Contacto() {
     <div className="max-w-md mx-auto bg-sky-50 min-h-screen">
       <div className="relative h-44 bg-gray-200">
         {restaurantContact.heroUrl && (
-          <img src={restaurantContact.heroUrl || ''} alt="Hero" className="w-full h-full object-cover" />
+          <img
+            src={restaurantContact.heroUrl || ''}
+            alt={`${restaurantContact.name} hero`}
+            className="w-full h-full object-cover"
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
+          />
         )}
         <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 w-40 h-40 rounded-full bg-white shadow flex items-center justify-center overflow-hidden">
           {restaurantContact.logoUrl ? (
@@ -84,7 +91,7 @@ export default function Contacto() {
         </div>
 
         <div className="text-center">
-          <h3 className="text-md font-medium text-gray-700 mb-4">Síguenos en redes sociales</h3>
+          <h2 className="text-md font-medium text-gray-700 mb-4">Síguenos en redes sociales</h2>
           <SocialLinks links={restaurantContact.socialMedia} />
         </div>
       </main>

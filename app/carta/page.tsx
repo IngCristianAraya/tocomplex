@@ -9,7 +9,14 @@ export default function Carta() {
     <div className="max-w-md mx-auto bg-white min-h-screen">
       <div className="relative h-44 bg-gray-200">
         {cartaBanner.heroUrl && (
-          <img src={cartaBanner.heroUrl} alt="Hero" className="w-full h-full object-cover" />
+          <img
+            src={cartaBanner.heroUrl}
+            alt="Banner Carta"
+            className="w-full h-full object-cover"
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
+          />
         )}
       </div>
       <div className="mt-10 text-center">

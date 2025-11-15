@@ -14,14 +14,14 @@ const styles = {
 
 export default function SocialLinks({ links }: { links: SocialMedia }) {
   const items = [
-    { key: 'instagram', href: links.instagram, icon: Instagram, className: styles.instagram },
-    { key: 'facebook', href: links.facebook, icon: Facebook, className: styles.facebook },
-    { key: 'tiktok', href: links.tiktok, icon: Music2, className: styles.tiktok },
-    { key: 'youtube', href: links.youtube, icon: Youtube, className: styles.youtube },
-    { key: 'x', href: links.x, icon: Twitter, className: styles.x },
-    { key: 'linkedin', href: links.linkedin, icon: Linkedin, className: styles.linkedin },
-    { key: 'twitch', href: links.twitch, icon: Twitch, className: styles.twitch },
-    { key: 'github', href: links.github, icon: Github, className: styles.github },
+    { key: 'instagram', href: links.instagram, icon: Instagram, className: styles.instagram, label: 'Instagram' },
+    { key: 'facebook', href: links.facebook, icon: Facebook, className: styles.facebook, label: 'Facebook' },
+    { key: 'tiktok', href: links.tiktok, icon: Music2, className: styles.tiktok, label: 'TikTok' },
+    { key: 'youtube', href: links.youtube, icon: Youtube, className: styles.youtube, label: 'YouTube' },
+    { key: 'x', href: links.x, icon: Twitter, className: styles.x, label: 'X' },
+    { key: 'linkedin', href: links.linkedin, icon: Linkedin, className: styles.linkedin, label: 'LinkedIn' },
+    { key: 'twitch', href: links.twitch, icon: Twitch, className: styles.twitch, label: 'Twitch' },
+    { key: 'github', href: links.github, icon: Github, className: styles.github, label: 'GitHub' },
   ].filter((i) => Boolean(i.href));
 
   return (
@@ -34,6 +34,8 @@ export default function SocialLinks({ links }: { links: SocialMedia }) {
             href={item.href as string}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Abrir ${item.label}`}
+            title={item.label}
             className={`rounded-full p-3 ${item.className} transition-transform hover:scale-105`}
           >
             <Icon className="w-6 h-6" />
