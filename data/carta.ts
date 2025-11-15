@@ -9,7 +9,7 @@ export const menuCategories: Category[] = [
         id: '1',
         name: 'Combo N°1',
         description:
-          'Completo italiano  + papas fritas  + bebida 500 ml',
+          'Completo italiano  + Papas fritas  + Gaseosa 500 ml',
         price: 15.0,
         image: '/images/combo1.svg',
         optionGroups: [
@@ -95,10 +95,65 @@ export const menuCategories: Category[] = [
     id: 'bebidas',
     name: 'Gaseosas',
     products: [
-      { id: '8', name: 'Coca Cola', description: 'Botella 500ml', price: 3.5 },
-      { id: '9', name: 'Inka Cola', description: 'Botella 500ml', price: 3.5 },
-      { id: '10', name: 'Agua Mineral', description: 'Botella 600ml', price: 2.5 },
-      { id: '11', name: 'Jugo Natural', description: 'De temporada', price: 4.5 },
+      { id: '8', 
+        name: 'Coca Cola', 
+        description: 'Botella 500ml', 
+        price: 3.5, 
+        image: '/images/cocacol.webp',
+      optionGroups: [
+        
+          {
+            id: 'tipo',
+            name: 'Tipo',
+            type: 'single',
+            options: ['Helada', 'Natural'],
+          },
+        
+        ], },
+
+      { id: '9', name: 'Inka Cola', description: 'Botella 500ml', price: 3.5, image: '/images/inkacola.webp',
+        optionGroups: [
+        
+          {
+            
+            id: 'tipo',
+            name: 'Tipo',
+            type: 'single',
+            options: ['Helada', 'Natural'],
+          },
+        
+        ],
+       },
+      { id: '10', name: 'Agua Cielo', description: 'Botella 600ml', price: 2.5, image: '/images/AguaCielo.webp',
+        optionGroups: [
+        
+          {
+            
+            id: 'tipo',
+            name: 'Tipo',
+            type: 'single',
+            options: ['Helada', 'Natural'],
+          },
+        
+        ],
+       },
+      { id: '11', 
+        name: 'Chicha Morada',
+        description: 'Natural',
+        price: 4.5, 
+        image: '/images/chicha.webp' ,
+        optionGroups: [
+        
+          {
+            
+            id: 'tipo',
+            name: 'Tipo',
+            type: 'single',
+            options: ['Helada', 'Natural'],
+          },
+        
+        ],
+       },
     ],
   },
 ];
