@@ -33,7 +33,7 @@ export const menuCategories: Category[] = [
           { id: 'cremas', name: 'Cremas', type: 'multiple', options: ['Ají', 'Mayonesa', 'Mostaza'] },
         ],
       },
-      { id: '3', name: 'Combinado 3', description: 'Con papas y ensalada', price: 22.9 },
+      { id: '3', name: 'Combo N°3 ', description: 'Papas fritas  + Gaseosa 500 ml', price: 22.9 },
     ],
   },
   {
